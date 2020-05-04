@@ -48,6 +48,6 @@ public class StringExamples2 {
 
         char front = input.charAt(0);
         char back = input.charAt(example.length() - 1);
-        String middle = input.substring(1, example.length() - 1)
+        String middle = input.substring(1, example.length() - 1);
     }
 }
