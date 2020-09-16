@@ -40,6 +40,36 @@ public class StringExamples3 {
         middle = str.substring(5, 6); // "n"
         last = str.substring(6); //  ""
         displaySubStrings(first, middle, last);
+
+        String s = "example";
+        System.out.println("{" + s.substring(0,0) + "}");
+        System.out.println("Length: " + s.substring(0,0).length());
+
+        int count = 0;
+        for (int i = 0; i < str.length(); i++){
+            if (str.charAt(i) == 'e'){
+               count++;
+           }
+        }
+        System.out.println("Count: " + count);
+
+        count = 0;
+        for (int i = 0; i < str.length(); i++){
+            if (str.substring(i, i+1).equals("e")){
+                count++;
+            }
+        }
+        System.out.println("Count: " + count);
+
+        boolean expression = true;
+        boolean expression2 = false;
+
+        if (expression && expression2){
+            System.out.println("Hellow World!");
+        } else {
+            System.out.println("Inside else");
+        }
+
     }
 
     private static void displaySubStrings(String first, String middle, String last) {
